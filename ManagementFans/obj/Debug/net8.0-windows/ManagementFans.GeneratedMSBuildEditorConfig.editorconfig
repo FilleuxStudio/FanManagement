@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ManagementFans
-build_property.ProjectDir = C:\Users\Dimitri\source\repos\ManagementFans\ManagementFans\
+build_property.ProjectDir = C:\Users\Dimitri\Documents\GitRepository\FanManagement\ManagementFans\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

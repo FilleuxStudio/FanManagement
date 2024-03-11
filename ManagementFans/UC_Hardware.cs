@@ -37,6 +37,7 @@ namespace ManagementFans
                 // Efface les éléments précédents
                 LB_InfoHardware.Items.Clear();
 
+                LB_InfoHardware.Items.Add($"##### CPU #####");
                 // Ajoute les informations CPU
                 foreach (var hardware in computer.Hardware)
                 {
@@ -145,44 +146,47 @@ namespace ManagementFans
                 foreach (ManagementObject fan in fanSearcher.Get())
                 {
                     string fanName = fan["Name"].ToString();
-                    string fanDeviceID = fan["DeviceID"].ToString();
-                    bool activeCooling = (bool)fan["ActiveCooling"];
-                    bool variableSpeed = (bool)fan["VariableSpeed"];
-                    string fanStatus = fan["Status"].ToString();
-                    string desiredSpeed = fan["DesiredSpeed"].ToString();
+                    string fanDeviceID = fan["DeviceID"] != null ? fan["DeviceID"].ToString() : "N/A";
+                    string fanDescription = fan["Description"] != null ? fan["Description"].ToString() : "N/A";
+                    string fanStatus = fan["Status"] != null ? fan["Status"].ToString() : "N/A";
+                    string desiredSpeed = fan["DesiredSpeed"] != null ? fan["DesiredSpeed"].ToString() : "N/A";
+
+                    // Gérer le cas où la propriété VariableSpeed n'existe pas
+                    bool? variableSpeed = fan["VariableSpeed"] as bool?;
+                    string fanVariableSpeed = variableSpeed.HasValue ? (variableSpeed.Value ? "Yes" : "No") : "N/A";
 
                     LB_InfoHardware.Items.Add($"Fan Name: {fanName}");
                     LB_InfoHardware.Items.Add($"Device ID: {fanDeviceID}");
-                    LB_InfoHardware.Items.Add($"Active Cooling: {(activeCooling ? "Yes" : "No")}");
-                    LB_InfoHardware.Items.Add($"Variable Speed: {(variableSpeed ? "Yes" : "No")}");
+                    LB_InfoHardware.Items.Add($"Description: {fanDescription}");
+                    LB_InfoHardware.Items.Add($"Variable Speed: {fanVariableSpeed}");
                     LB_InfoHardware.Items.Add($"Status: {fanStatus}");
                     LB_InfoHardware.Items.Add($"Desired Speed: {desiredSpeed}");
                 }
+            }
 
                 // Obtenir les informations sur les sondes de température
                 ManagementObjectSearcher tempSearcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_TemperatureProbe");
                 foreach (ManagementObject tempProbe in tempSearcher.Get())
                 {
-                    string tempDeviceID = tempProbe["DeviceID"].ToString();
-                    string tempName = tempProbe["Name"].ToString();
-                    string tempDescription = tempProbe["Description"].ToString();
-                    string tempMaxReadable = tempProbe["MaxReadable"].ToString();
-                    string tempMinReadable = tempProbe["MinReadable"].ToString();
-                    string tempCurrentReading = tempProbe["CurrentReading"].ToString();
-                    string tempNominalReading = tempProbe["NominalReading"].ToString();
-                    string tempNormalMax = tempProbe["NormalMax"].ToString();
-                    string tempNormalMin = tempProbe["NormalMin"].ToString();
+                string tempDeviceID = tempProbe["DeviceID"] != null ? tempProbe["DeviceID"].ToString() : "N/A";
+                string tempName = tempProbe["Name"] != null ? tempProbe["Name"].ToString() : "N/A";
+                string tempDescription = tempProbe["Description"] != null ? tempProbe["Description"].ToString() : "N/A";
+                string tempMaxReadable = tempProbe["MaxReadable"] != null ? tempProbe["MaxReadable"].ToString() : "N/A";
+                string tempMinReadable = tempProbe["MinReadable"] != null ? tempProbe["MinReadable"].ToString() : "N/A";
+                string tempCurrentReading = tempProbe["CurrentReading"] != null ? tempProbe["CurrentReading"].ToString() : "N/A";
+                string tempNominalReading = tempProbe["NominalReading"] != null ? tempProbe["NominalReading"].ToString() : "N/A";
+                string tempNormalMax = tempProbe["NormalMax"] != null ? tempProbe["NormalMax"].ToString() : "N/A";
+                string tempNormalMin = tempProbe["NormalMin"] != null ? tempProbe["NormalMin"].ToString() : "N/A";
 
-                    LB_InfoHardware.Items.Add($"Device ID: {tempDeviceID}");
-                    LB_InfoHardware.Items.Add($"Name: {tempName}");
-                    LB_InfoHardware.Items.Add($"Description: {tempDescription}");
-                    LB_InfoHardware.Items.Add($"Max Readable: {tempMaxReadable}");
-                    LB_InfoHardware.Items.Add($"Min Readable: {tempMinReadable}");
-                    LB_InfoHardware.Items.Add($"Current Reading: {tempCurrentReading}");
-                    LB_InfoHardware.Items.Add($"Nominal Reading: {tempNominalReading}");
-                    LB_InfoHardware.Items.Add($"Normal Max: {tempNormalMax}");
-                    LB_InfoHardware.Items.Add($"Normal Min: {tempNormalMin}");
-                }
+                LB_InfoHardware.Items.Add($"Device ID: {tempDeviceID}");
+                LB_InfoHardware.Items.Add($"Name: {tempName}");
+                LB_InfoHardware.Items.Add($"Description: {tempDescription}");
+                LB_InfoHardware.Items.Add($"Max Readable: {tempMaxReadable}");
+                LB_InfoHardware.Items.Add($"Min Readable: {tempMinReadable}");
+                LB_InfoHardware.Items.Add($"Current Reading: {tempCurrentReading}");
+                LB_InfoHardware.Items.Add($"Nominal Reading: {tempNominalReading}");
+                LB_InfoHardware.Items.Add($"Normal Max: {tempNormalMax}");
+                LB_InfoHardware.Items.Add($"Normal Min: {tempNormalMin}");
             }
         }
 
