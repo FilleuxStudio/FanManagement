@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "dgSpecHash": "/3MJOUMxOZtoqAa1KlbaCJK/Y8KQxAauWnimeT6fY9n38f+hj6HmFYU+mJBeZINx/xYvgycNSlvcY14vAbg24Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dimitri\\source\\repos\\ManagementFans\\ManagementFans\\ManagementFans.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dimitri\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\microsoft.win32.registry\\4.5.0-preview2-26406-04\\microsoft.win32.registry.4.5.0-preview2-26406-04.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\mono.posix.netstandard\\1.0.0-beta3\\mono.posix.netstandard.1.0.0-beta3.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\openhardwaremonitorlibcore\\1.0.2\\openhardwaremonitorlibcore.1.0.2.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.io.filesystem.accesscontrol\\4.4.0\\system.io.filesystem.accesscontrol.4.4.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.io.ports\\4.4.0\\system.io.ports.4.4.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.security.accesscontrol\\4.5.0-preview2-26406-04\\system.security.accesscontrol.4.5.0-preview2-26406-04.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.security.principal.windows\\4.5.0-preview2-26406-04\\system.security.principal.windows.4.5.0-preview2-26406-04.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimitri\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "OpenHardwareMonitorLibCore 1.0.2 dépend de Microsoft.Win32.Registry (>= 4.5.0-preview2-25707-02), mais Microsoft.Win32.Registry 4.5.0-preview2-25707-02 est introuvable. Une meilleure correspondance approximative de Microsoft.Win32.Registry 4.5.0-preview2-26406-04 a été résolue.",
+      "libraryId": "Microsoft.Win32.Registry",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}
