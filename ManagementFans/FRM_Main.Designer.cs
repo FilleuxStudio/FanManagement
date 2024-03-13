@@ -65,7 +65,7 @@
             BTN_informationSystem.FlatAppearance.MouseOverBackColor = Color.FromArgb(249, 252, 245);
             BTN_informationSystem.FlatStyle = FlatStyle.Flat;
             BTN_informationSystem.Font = new Font("Carlito", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BTN_informationSystem.Image = (Image)resources.GetObject("BTN_informationSystem.Image");
+            BTN_informationSystem.Image = Properties.Resources.sys;
             BTN_informationSystem.Location = new Point(108, 237);
             BTN_informationSystem.Name = "BTN_informationSystem";
             BTN_informationSystem.Size = new Size(190, 190);
@@ -74,6 +74,7 @@
             BTN_informationSystem.TextAlign = ContentAlignment.BottomCenter;
             BTN_informationSystem.TextImageRelation = TextImageRelation.ImageAboveText;
             BTN_informationSystem.UseVisualStyleBackColor = false;
+            BTN_informationSystem.Click += BTN_informationSystem_Click;
             // 
             // BTN_info
             // 
@@ -93,6 +94,7 @@
             UC_HardwareVIew.Name = "UC_HardwareVIew";
             UC_HardwareVIew.Size = new Size(405, 439);
             UC_HardwareVIew.TabIndex = 2;
+            UC_HardwareVIew.Visible = false;
             // 
             // FRM_Main
             // 

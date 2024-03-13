@@ -28,38 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            LB_InfoHardware = new ListBox();
+            LV_InfoHardware = new ListView();
+            BTN_menu = new Button();
             SuspendLayout();
             // 
-            // LB_InfoHardware
+            // LV_InfoHardware
             // 
-            LB_InfoHardware.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            LB_InfoHardware.BackColor = Color.White;
-            LB_InfoHardware.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LB_InfoHardware.FormattingEnabled = true;
-            LB_InfoHardware.ItemHeight = 15;
-            LB_InfoHardware.Location = new Point(13, 5);
-            LB_InfoHardware.Name = "LB_InfoHardware";
-            LB_InfoHardware.ScrollAlwaysVisible = true;
-            LB_InfoHardware.SelectionMode = SelectionMode.MultiExtended;
-            LB_InfoHardware.Size = new Size(378, 424);
-            LB_InfoHardware.TabIndex = 0;
-            LB_InfoHardware.KeyDown += LB_InfoHardware_KeyDown;
+            LV_InfoHardware.BackColor = Color.White;
+            LV_InfoHardware.Font = new Font("Consolas", 9.75F);
+            LV_InfoHardware.ForeColor = Color.Black;
+            LV_InfoHardware.Location = new Point(38, 3);
+            LV_InfoHardware.Name = "LV_InfoHardware";
+            LV_InfoHardware.Size = new Size(364, 433);
+            LV_InfoHardware.TabIndex = 1;
+            LV_InfoHardware.UseCompatibleStateImageBehavior = false;
+            // 
+            // BTN_menu
+            // 
+            BTN_menu.BackColor = Color.White;
+            BTN_menu.Image = Properties.Resources.retour;
+            BTN_menu.Location = new Point(3, 3);
+            BTN_menu.Name = "BTN_menu";
+            BTN_menu.Size = new Size(29, 29);
+            BTN_menu.TabIndex = 2;
+            BTN_menu.UseVisualStyleBackColor = false;
+            BTN_menu.Click += BTN_menu_Click;
             // 
             // UC_Hardware
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(238, 237, 243);
-            Controls.Add(LB_InfoHardware);
+            Controls.Add(BTN_menu);
+            Controls.Add(LV_InfoHardware);
             Name = "UC_Hardware";
             Size = new Size(405, 439);
             VisibleChanged += UC_Hardware_VisibleChanged;
+            KeyDown += UC_Hardware_KeyDown;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private ListBox LB_InfoHardware;
+        private ListView LV_InfoHardware;
+        private Button BTN_menu;
     }
 }
