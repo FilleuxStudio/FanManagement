@@ -33,6 +33,7 @@
             BTN_informationSystem = new UI.RoundButton();
             BTN_info = new Button();
             UC_HardwareVIew = new UC_Hardware();
+            UC_FanActiveView = new UC_FanActive();
             SuspendLayout();
             // 
             // BT_managementFans
@@ -54,6 +55,7 @@
             BT_managementFans.TextAlign = ContentAlignment.BottomCenter;
             BT_managementFans.TextImageRelation = TextImageRelation.ImageAboveText;
             BT_managementFans.UseVisualStyleBackColor = false;
+            BT_managementFans.Click += BT_managementFans_Click;
             // 
             // BTN_informationSystem
             // 
@@ -96,12 +98,23 @@
             UC_HardwareVIew.TabIndex = 2;
             UC_HardwareVIew.Visible = false;
             // 
+            // UC_FanActiveView
+            // 
+            UC_FanActiveView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            UC_FanActiveView.BackColor = Color.FromArgb(238, 237, 243);
+            UC_FanActiveView.Location = new Point(0, 0);
+            UC_FanActiveView.Name = "UC_FanActiveView";
+            UC_FanActiveView.Size = new Size(405, 439);
+            UC_FanActiveView.TabIndex = 3;
+            UC_FanActiveView.Visible = false;
+            // 
             // FRM_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(238, 237, 243);
             ClientSize = new Size(409, 441);
+            Controls.Add(UC_FanActiveView);
             Controls.Add(UC_HardwareVIew);
             Controls.Add(BTN_info);
             Controls.Add(BTN_informationSystem);
@@ -119,5 +132,6 @@
         private UI.RoundButton BTN_informationSystem;
         private Button BTN_info;
         private UC_Hardware UC_HardwareVIew;
+        private UC_FanActive UC_FanActiveView;
     }
 }

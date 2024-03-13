@@ -11,5 +11,10 @@ namespace ManagementFans
         {
             UC_HardwareVIew.Visible = true;
         }
+
+        private void BT_managementFans_Click(object sender, EventArgs e)
+        {
+            UC_FanActiveView.Visible = true;
+        }
     }
 }

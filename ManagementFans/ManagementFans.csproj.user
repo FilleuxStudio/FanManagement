@@ -4,6 +4,9 @@
     <Compile Update="FRM_Main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UC_FanActive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UC_Hardware.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -6,7 +6,26 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>fans.ico</ApplicationIcon>
+    <Company>FILLEUXStudio</Company>
+    <Authors>FILLEUX Dimitri</Authors>
+    <Product>Utility software</Product>
+    <Description>Software for hardware feedback and CPU work to activate fans</Description>
+    <PackageIcon>fans.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="fans.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="OpenHardwareMonitorLibCore" Version="1.0.2" />
@@ -26,6 +45,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="UI\fans.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
