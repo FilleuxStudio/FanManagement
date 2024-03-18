@@ -87,6 +87,7 @@
             BTN_info.Size = new Size(34, 34);
             BTN_info.TabIndex = 1;
             BTN_info.UseVisualStyleBackColor = true;
+            BTN_info.Click += BTN_info_Click;
             // 
             // UC_HardwareVIew
             // 

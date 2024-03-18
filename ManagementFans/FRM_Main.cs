@@ -16,5 +16,11 @@ namespace ManagementFans
         {
             UC_FanActiveView.Visible = true;
         }
+
+        private void BTN_info_Click(object sender, EventArgs e)
+        {
+            FRM_Info fRM_Info = new FRM_Info();
+            fRM_Info.Show();
+        }
     }
 }

@@ -1,0 +1,9 @@
+Nous sommes heureux de vous informer que le logiciel FansManagement est un logiciel open source, distribué sous la licence MIT (Massachusetts Institute of Technology). Cela signifie que vous avez le droit de modifier, de reproduire et de distribuer ce logiciel selon les termes de cette licence.
+
+La licence MIT est une licence permissive qui permet une utilisation flexible du logiciel, que ce soit à des fins commerciales ou non commerciales. Vous pouvez également vendre des copies du logiciel si vous le souhaitez.
+
+Pour plus d'informations sur les conditions de la licence MIT, veuillez consulter le fichier de licence inclus dans le répertoire d'installation du logiciel ou visitez le site web officiel de la licence MIT à l'adresse suivante : [insérer le lien vers la licence MIT ici].
+
+Nous encourageons la contribution à l'amélioration de FansManagement et nous vous invitons à participer à son développement sur notre dépôt GitHub officiel : https://github.com/FilleuxStudio/FanManagement.
+
+Nous vous remercions d'avoir choisi FansManagement et nous espérons que ce logiciel répondra à vos besoins avec satisfaction.s
